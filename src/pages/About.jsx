@@ -10,10 +10,10 @@ import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
-    <section className="max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)] ">
+    <section className="max-w-5xl mx-auto sm:p-16 pb-12 `pt-31.5!` px-8 min-h-[calc(100vh-80px)] ">
       <h1 className="sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;">
         Hello, I'm{" "}
-        <span className="bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent font-semibold drop-shadow">
+        <span className="bg-linear-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent font-semibold drop-shadow">
           {" "}
           Muhammad Haroon
         </span>{" "}
@@ -61,7 +61,7 @@ const About = () => {
 
         <div className="mt-12 flex">
           <VerticalTimeline>
-            {experiences.map((experience, index) => (
+            {experiences.map((experience) => (
               <VerticalTimelineElement
                 key={experience.company_name}
                 date={experience.date}

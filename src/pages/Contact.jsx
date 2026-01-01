@@ -5,11 +5,11 @@ import { Suspense, useRef, useState } from "react";
 import Fox from "../models/Fox";
 import useAlert from "../hooks/useAlert";
 import Loader from "../components/Loader";
-import Alert from "../components/Alert";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const { alert, showAlert, hideAlert } = useAlert();
+  const { showAlert, hideAlert } = useAlert();
   const [isLoading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
 
@@ -67,7 +67,7 @@ const Contact = () => {
       );
   };
   return (
-    <section className=" flex lg:flex-row flex-col max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)]">
+    <section className=" flex lg:flex-row flex-col max-w-5xl mx-auto sm:p-16 pb-12 `pt-31.5!` px-8 min-h-[calc(100vh-80px)]">
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="sm:text-2xl text-3xl font-semibold sm:leading-snug font-poppins relative top-6 left-0 right-0 text-center">
           Get in Touch
@@ -134,7 +134,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
+      <div className="lg:w-1/2 w-full lg:h-auto `md:h-137.5` `h-87.5`">
         <Canvas
           camera={{
             position: [0, 0, 5],
