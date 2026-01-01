@@ -10,10 +10,10 @@ import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
-    <section className="max-container mt-18">
+    <section className="max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)] ">
       <h1 className="sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;">
         Hello, I'm{" "}
-        <span className="blue-gradient_text font-semibold drop-shadow">
+        <span className="bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent font-semibold drop-shadow">
           {" "}
           Muhammad Haroon
         </span>{" "}
@@ -49,7 +49,9 @@ const About = () => {
       </div>
 
       <div className="py-16">
-        <h3 className="subhead-text">Work Experience.</h3>
+        <h3 className="font-semibold sm:text-3xl text-xl relative font-poppins">
+          Work Experience.
+        </h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
             I've worked with all sorts of companies, leveling up my skills and

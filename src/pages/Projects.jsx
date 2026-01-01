@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
-
 import CTA from "../components/CTA";
 import { projects } from "../constants";
 import { arrow } from "../assets/icons";
 
 const Projects = () => {
   return (
-    <section className="max-container absolute top-25">
-      <h1 className="head-text">
+    <section className="max-w-5xl mx-auto sm:p-16 pb-12 pt-31.5 px-8 min-h-[calc(100vh-80px)] ">
+      <h1 className=" sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins">
         My{" "}
-        <span className="blue-gradient_text drop-shadow font-semibold">
+        <span className="bg-linear-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent drop-shadow font-semibold">
           Projects
         </span>
       </h1>
@@ -25,7 +24,7 @@ const Projects = () => {
       <div className="flex flex-wrap my-20 gap-16">
         {projects.map((project) => (
           <div className="lg:w-100] w-full" key={project.name}>
-            <div className="block-container w-12 h-12">
+            <div className=" w-12 h-12">
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img

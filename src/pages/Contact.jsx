@@ -67,9 +67,9 @@ const Contact = () => {
       );
   };
   return (
-    <section className="relative flex lg:flex-row flex-col max-container">
+    <section className=" flex lg:flex-row flex-col max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)]">
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="sm:text-2xl text-3xl font-semibold sm:leading-snug font-poppins relative top-16 left-0 right-0 text-center">
+        <h1 className="sm:text-2xl text-3xl font-semibold sm:leading-snug font-poppins relative top-6 left-0 right-0 text-center">
           Get in Touch
         </h1>
 
